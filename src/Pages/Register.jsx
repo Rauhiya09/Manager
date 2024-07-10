@@ -18,7 +18,7 @@ const navigate = useNavigate();
       console.log(response.data);
       navigate("/")
 
-      // Redirect to login page or display success message
+      
     } catch (error) {
       setError(error.response.data.error);
     }

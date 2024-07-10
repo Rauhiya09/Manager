@@ -11,7 +11,7 @@ const ViewAccount = () => {
     const fetchAccounts = async () => {
       try {
         const response = await axiosInstance.get('http://localhost:8080/api/account');
-        // Replace with the desired user ID
+      
         const filteredAccounts = response.data.filter((account) => account.user.id === userId);
         setAccounts(filteredAccounts);
         filteredAccounts.forEach((account) => {
@@ -57,7 +57,7 @@ const ViewAccount = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-3xl font-bold mb-6">List of Account Registered  {userId}</h1>
+      <h1 className="text-3xl font-bold mb-6">List of Account Registered  </h1>
       <table className="min-w-full bg-white">
         <thead>
           <tr>
